@@ -1,0 +1,47 @@
+//Fuente
+
+@import "componentes/fuentes";
+
+//Variables
+
+@import "utilidades/variables";
+
+//body
+
+@import "layout/body";
+
+//header 
+
+@import "layout/header";
+
+//Footer
+
+@import "layout/footer";
+
+//ERROR 404 
+
+@import "html/error";
+
+//Estilos home (index)
+
+@import "html/home.scss";
+
+//mixin 
+
+@import "utilidades/mixin";
+
+//Estilos Bancos-Billeteras
+
+@import "html/bancos-billeteras.scss";
+
+//Estilos Ofertas-Descuentos
+
+@import "html/ofertas-descuentos.scss";
+
+//Estilos Usa tienda 
+
+@import "html/usa-tienda.scss";
+
+//Estilos Ayuda 
+
+@import "html/ayuda.scss";

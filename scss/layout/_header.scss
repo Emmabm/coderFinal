@@ -1,0 +1,29 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+header {
+    border-bottom: solid 5px rgb(94, 92, 92);
+    background-color:bisque;
+
+    .logoHot {
+        width: 180px;
+        height: 100px;
+        margin-left: 50px;     
+     }
+      
+      /*NAV*/
+      
+      .fuentesNav {
+        font-size: 1.3rem;
+        li {
+          margin-left:80px;
+          @include tabletHeader {
+            font-size: 1rem;
+
+          }
+          @include mobileHeader {
+            font-size: 0.8rem;
+          }
+        }
+      }
+}

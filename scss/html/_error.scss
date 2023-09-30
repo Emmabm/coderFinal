@@ -1,0 +1,39 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+.error {
+    background-color: $color-botones;
+
+    main {
+        background-color: $color-botones;
+        margin-top: 2rem;
+
+        .cuerpo {
+            @include flex;
+            margin-top:10rem;
+            img {
+                
+                width: 450px;
+                height: 150px;
+            }
+            .colorButton {
+                @include flex;
+                button {
+                    background-color: $color-secundario;
+                    width: 200px;
+                    height: 40px;
+                    margin: 1rem;
+                    border-radius: 10px;
+                    
+
+                    a {
+                        color: $color-botones;
+                        text-decoration: none;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+}

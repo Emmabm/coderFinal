@@ -1,0 +1,101 @@
+//sin parametros
+
+@mixin flex {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+//mq categorias
+
+@mixin mobileCategorias {
+    @media screen and (max-width:507px) {
+        @content;
+
+    }
+}
+
+@mixin tabletCategorias {
+    @media screen and (max-width:990px) {
+        @content;
+
+    }
+}
+
+// mq bancos 
+
+
+@mixin mobileBancos {
+    @media screen and (max-width:540px) {
+        @content;
+
+    }
+}
+
+
+@mixin tabletBancos {
+    @media screen and (max-width:822px) {
+        @content;
+
+    }
+}
+
+@mixin escritorioBancos {
+    @media screen and (max-width: 1075px) {
+        @content;
+
+    }
+}
+
+//mq index
+
+//Que somos 
+
+@mixin mobileSomos {
+    @media  screen and (max-width:550px) {
+        @content;
+    }
+}
+@mixin tabletSomos {
+    @media  screen and (max-width:800px) {
+        @content;
+    }
+}
+
+
+//mq carousel 
+
+@mixin mobileCarousel {
+    @media screen and (max-width:550px){
+        @content;
+        
+    }
+}
+
+@mixin tabletCarousel {
+    @media screen and (max-width:800px){
+        @content;
+        
+    }
+}
+
+//header 
+//nav
+
+@mixin mobileHeader { 
+    @media screen and (max-width:500px) {
+        @content;
+        
+    }
+
+}
+@mixin tabletHeader { 
+    @media screen and (max-width:850px) {
+        @content;
+        
+    }
+
+}

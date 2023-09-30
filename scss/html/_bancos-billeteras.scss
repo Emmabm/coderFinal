@@ -1,0 +1,67 @@
+@import "../utilidades/variables";
+//Bancos-Billeteras
+
+main {
+    .dropdown {
+        text-align: center;
+        margin-bottom: 3.5rem;
+
+        .colorCard {
+            width: 25rem;
+            border-radius: 1rem;
+            margin-top: 20px;
+            @include mobileBancos {
+                width: 16rem;
+                height: 6rem;
+
+            }
+            @include tabletBancos {
+                width: 20rem;
+                height: 7rem;
+            }
+            @include escritorioBancos {
+                width: 22rem;
+                height: 9rem;
+
+            }
+
+            img {
+                width: 135px;
+                height: 100px;
+                @include mobileBancos {
+                    width: 70px;
+                    height: 40px;
+
+                }
+                @include tabletBancos {
+                    width: 90px;
+                    height: 60px;
+                    
+                }
+                @include escritorioBancos {
+                   width: 120px;
+                   height: 80px;
+    
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        width: 25rem;
+        text-align: center;
+        border-radius: 1rem;
+        &:hover {
+            background-color: $color-hover;
+        }
+
+        .dropdown-item {
+            text-decoration: none;
+
+
+            &:hover {
+                background-color: $color-hover;
+            }
+        }
+    }
+}

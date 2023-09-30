@@ -1,0 +1,98 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../componentes/fuentes";
+
+//Usa tu tienda 
+main {
+  .emaCaja {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    h2 {
+      color: $color-botones;
+    }
+    p {
+      color: $color-general;
+      font-size: 1.6rem;
+      text-decoration: underline
+
+    }
+  }
+  section {
+  
+    .beneficios {
+      margin-bottom: 4rem;
+      h2 {
+        text-decoration: underline;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: $color-botones;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    
+  }
+
+  section {
+    .pasos {
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-bottom: 4rem;
+      text-align: center;
+      color: $color-botones
+
+    }
+    .card {
+      @include flex;
+      margin-bottom: 2rem;
+      height: 22rem;
+      box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    }
+    .boton-1 {
+      @include flex;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      .btn-1 {
+        text-decoration: none;
+        width: 400px;
+        color:black;
+        background-color: $color-principal;
+        border-radius: 4px;
+        box-shadow:inset  0 0 0 0 rgb(47, 47, 245);
+        transition: ease-out .4s;
+        font-size: 1.7rem;
+        outline: none;
+        &:hover {
+          box-shadow: inset 400px 0 0 0 rgb(47, 47, 245);
+          color: $color-botones;
+        }
+      }
+    }
+
+
+ 
+  }
+
+  .tutorial {
+    @include flex;
+    width: 700px;
+    background-color:$color-principal;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  }
+
+
+    h3 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    a {
+      font-size: 1.2rem;
+      color: blue;
+
+    }
+  }
